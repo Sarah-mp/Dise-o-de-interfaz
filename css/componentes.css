@@ -1,0 +1,168 @@
+:root {
+--color-primario: #5C6AC4; /* Azul para elementos primarios */
+    --color-secundario: #69BE28; /* Verde actualizado como color secundario */
+    --color-fondo: #FFFFFF; /* Color de fondo para el contenido principal */
+    --color-texto-primario: #212121; /* Color principal del texto */
+    --color-texto-secundario: #757575; /* Color secundario del texto */
+    --color-borde: #333333; /* Color para bordes y divisiones */
+    --color-menu-fondo: #333333; /* Fondo oscuro para el menú */
+    --color-menu-hover: #5C6AC4; /* Color de fondo para hover en el menú */
+    --color-texto-menu: #FFFFFF; 
+    --gradiente-hero: linear-gradient(to right, #5C6AC4, #69BE28);
+    --bg-active:#0a4f77;
+    --bg-cont:#1a6a99;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: var(--gradiente-hero); /* Usando gradiente */
+    
+}
+
+*{
+ 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+
+h2{
+    text-align: center;
+    color: var(--color-texto-menu);
+    margin-top: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Estilos generales del menú */
+.menu {
+    display: flex;
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    background-color: var(--color-menu-fondo);
+    font-family: Arial, sans-serif;
+    padding: 10px 20px; /* Mantiene la ampliación de la barra de fondo */
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-texto-menu);
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: var(--color-menu-hover);
+}
+
+
+.tab-container{
+    width: 70%;
+    height: 600px;
+    margin: 50px auto;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.options{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    list-style: none;
+    background: var(--bg-active);
+}
+
+.option{
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    border: solid 1px rgba(4, 51, 78, .6);
+    color:#FFFFFF;
+    cursor: pointer;
+    
+}
+
+.option-active{
+    background: var(--bg-cont);
+    border-bottom: 1px solid rgba(7, 63, 95, .4);
+}
+
+.contents{
+    width: 100%;
+    height: 85%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    display: none;
+    padding: 20px;
+}
+
+.content-active{
+    background: var(--bg-active);
+    display: block;
+}
+
+.content h3{
+    text-align: center;
+    border-bottom: solid 1px rgba(225,225,225,.3);
+    letter-spacing: 2px;
+    margin: 10px;
+
+}
+
+.content p{
+    margin: 15px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.contentimg{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+   
+}
+
+.imgcompo{
+    width: 60%;
+    height: 250px;
+}
+
+.central-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.advantages-content,
+.disadvantages-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.text-content,
+.disadvantages-content {
+    flex: 1;
+}
+
+.content-img {
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.img-component {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+

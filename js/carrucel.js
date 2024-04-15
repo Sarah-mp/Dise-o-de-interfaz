@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
     const currentUrl = (window.location.href.split('/')[window.location.href.split('/').length-1]).split('.')[0];
-    if (currentUrl == "index") {
+    if (currentUrl == "eventos") {
         var glider = new Glider(document.querySelector('.lista-1'), {
             slidesToShow: 3,
             slidesToScroll: 1,
