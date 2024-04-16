@@ -1,0 +1,36 @@
+.slider{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+        display: flex;
+        width: calc((150px + 30px) * 36); /* 150px es el ancho de cada slide y 30px es la suma de los márgenes izquierdo y derecho */
+        animation: scroll 30s linear infinite;
+}
+
+.slider .slide {
+    width: 150px; 
+    flex-shrink: 0;
+    margin-right: 15px; 
+    margin-left: 15px; 
+}
+
+.slider .slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Asegúrate de incluir el margen en tu cálculo */
+        /* (ancho total de una imagen + margen izquierdo + margen derecho) * número de imágenes visibles */
+        transform: translateX(calc(-1 * (150px + 15px + 15px) * 7));
+    }
+}
