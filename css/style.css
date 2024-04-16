@@ -1,17 +1,17 @@
 :root {
-    --color-primario: #5C6AC4; /* Azul para elementos primarios */
-    --color-secundario: #69BE28; /* Verde actualizado como color secundario */
+    --color-primario: #273fd9; /* Azul para elementos primarios */
+    --color-secundario: #000000; /* Verde actualizado como color secundario */
     --color-fondo: #FFFFFF; /* Color de fondo para el contenido principal */
     --color-texto-primario: #212121; /* Color principal del texto */
     --color-texto-secundario: #757575; /* Color secundario del texto */
     --color-borde: #333333; /* Color para bordes y divisiones */
     --color-menu-fondo: #333333; /* Fondo oscuro para el menú */
-    --color-menu-hover: #5C6AC4; /* Color de fondo para hover en el menú */
+    --color-menu-hover: #5267eb; /* Color de fondo para hover en el menú */
     --color-texto-menu: #FFFFFF; /* Color del texto del menú */
     --sombra: 0 4px 6px rgba(0, 0, 0, 0.6);
-    --gradiente-hero: linear-gradient(to right, #5C6AC4, #69BE28); /* Gradiente desde azul a verde */
+    --gradiente-hero: linear-gradient(to right, #0e2be3, #28be3f); /* Gradiente desde azul a verde */
   --color-fondo-beneficios: #f9f9f9; /* Fondo más suave para la sección de beneficios */
-  --padding-seccion: 40px; /* Espaciado uniforme para todas las secciones */
+  --padding-seccion: 50px; /* Espaciado uniforme para todas las secciones */
   }
 body{
     background: var(--gradiente-hero); /* Usando gradiente */
@@ -65,7 +65,7 @@ h1{
 }
 
 .hero img {
-    max-width: 50%;
+    max-width: 70%;
     height: 40%;
     margin-top: 20px;
 }
@@ -124,6 +124,15 @@ h1{
 .educativo article:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+.Form_registrer {
+    display: flex;
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 70px ; /* Mantiene la ampliación de la barra de fondo */
+}
+
 /* Estilos para el pie de página */
 footer {
     background-color: #333;

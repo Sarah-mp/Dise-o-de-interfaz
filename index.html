@@ -92,21 +92,21 @@
                 </button>
                 <div class="carrusel-lista lista-1">
                     <div class="carrusel-elementos">
-                        <a href="https://getbootstrap.com/" data-lightbox="galería" title="Bootstrap">
+                        <a href="https://getbootstrap.com/" target = "_blank" data-lightbox="galería" title="Bootstrap">
                             <img src="img/image 14.svg" class="img-thumbnail">
                         </a>
                         
                     </div>
                     <div class="carrusel-lista">
                         <a
-                            href="img/image 15.svg 15.svg" data-lightbox="galería" title="Foundation">    
+                            href="https://get.foundation/" target = "_blank" data-lightbox="galería" title="Foundation">    
                             <img
                                 src="img/image 15.svg" class="img-thumbnail">
                         </a>
                     </div>
                     <div class="carrusel-elementos">
                         <a
-                            href="img/image 16.svg" data-lightbox="galería" title="Material-UI" 
+                            href="https://mui.com/" target = "_blank"data-lightbox="galería" title="Material-UI" 
                             ><img
                                 src="img/image 16.svg" class="img-thumbnail">
                                 
@@ -114,7 +114,7 @@
                     </div>
                     <div class="carrusel-elementos">
                         <a
-                            href="img/image 17.svg" data-lightbox="galería" title="Semantic UI"                           
+                            href="https://semantic-ui.com/" target = "_blank"data-lightbox="galería" title="Semantic UI"                           
                             ><img
                                 src="img/image 17.svg" class="img-thumbnail">
                                 
@@ -122,7 +122,7 @@
                     </div>
                     <div class="carrusel-elementos">
                         <a
-                            href="img/image 18.svg" data-lightbox="galería" title="Tailwind CSS"                          
+                            href="https://tailwindcss.com/" target = "_blank"data-lightbox="galería" title="Tailwind CSS"                          
                             ><img
                                 src="img/image 18.svg" class="img-thumbnail"
                                 
@@ -130,44 +130,44 @@
                     </div>
                     <div class="carrusel-elementos">
                         <a
-                            href="img/image 19.svg " data-lightbox="galería" title="Bulma"                           
+                            href="https://bulma.io/" target = "_blank"data-lightbox="galería" title="Bulma"                           
                             ><img
                                 src="img/image 19.svg " class="img-thumbnail">
                                 
                         </a>
                     </div>
                     <div class="carrusel-elementos">
-                        <a href="img/image 20.svg." data-lightbox="galería" title="Vue Material">
+                        <a href="https://www.creative-tim.com/vuematerial/" target = "_blank"data-lightbox="galería" title="Vue Material">
                             <img src="img/image 20.svg." class="img-thumbnail">
                         </a>
                         
                     </div>
                     <div class="carrusel-elementos">
-                        <a href="img/image 21.svg" data-lightbox="galería" title="Vuetify">
+                        <a href="https://vuetifyjs.com/en/" target = "_blank"data-lightbox="galería" title="Vuetify">
                             <img src="img/image 21.svg" class="img-thumbnail">
                         </a>
                         
                     </div>
                     <div class="carrusel-elementos">
-                        <a href="img/image 22.svg" data-lightbox="galería" title="Flutter ">
+                        <a href="https://flutter.dev/" target = "_blank"data-lightbox="galería" title="Flutter ">
                             <img src="img/image 22.svg" class="img-thumbnail">
                         </a>
                         
                     </div>
                     <div class="carrusel-elementos">
-                        <a href="img/image 23.svg" data-lightbox="galería" title="React Native">
+                        <a href="https://reactnative.dev/" target = "_blank"data-lightbox="galería" title="React Native">
                             <img src="img/image 23.svg" class="img-thumbnail">
                         </a>
                         
                     </div>
                     <div class="carrusel-elementos">
-                        <a href="img/image 24.svg" data-lightbox="galería" title="Ionic">
+                        <a href="https://ionicframework.com/" target = "_blank"data-lightbox="galería" title="Ionic">
                             <img src="img/image 24.svg" class="img-thumbnail">
                         </a>
                         
                     </div>
                     <div class="carrusel-elementos">
-                        <a href="img/image 25.svg" data-lightbox="galería" title="Xamarin">
+                        <a href="https://visualstudio.microsoft.com/es/xamarin/" target = "_blank"data-lightbox="galería" title="Xamarin">
                             <img src="img/image 25.svg" class="img-thumbnail">
                         </a>
                         
@@ -206,9 +206,9 @@
           avanzadas de diseño y desarrollo.
         </p>
         <ul>
-          <li><a href="https://ucc.edu.co/">Curso Básico de Bootstrap</a></li>
-          <li><a href="#">React para Principiantes</a></li>
-          <li><a href="#">Angular en Profundidad</a></li>
+          <li><a href="https://www.youtube.com/watch?v=nug1pMke-y4&ab_channel=FalconMasters" target = "_blank">Curso Básico de Bootstrap</a></li>
+          <li><a href="https://www.youtube.com/watch?v=pFyAu4R684s&ab_channel=MoureDevbyBraisMoure" target = "_blank">React para Principiantes>React para Principiantes</a></li>
+          <li><a href="https://www.youtube.com/watch?v=BpgBuBeYYLU&ab_channel=AntonioP%C3%A9rez" target = "_blank">Angular en Profundidad</a></li>
         </ul>
       </article>
 
@@ -218,9 +218,39 @@
           Participa en sesiones en vivo para aprender directamente de los
           expertos en UI y resolver tus dudas en tiempo real.
         </p>
-        <p><a href="#">Regístrate para el próximo webinar</a></p>
+        <p><a href="#" id="openFormLink">Regístrate para el próximo webinar</a></p>
       </article>
 
+      <div id="contactForm" class="Form_registrer" style="display: none;">
+        <h3>Formulario de Contacto</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+    
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="telefono">Teléfono de Contacto:</label><br>
+            <input type="tel" id="telefono" name="telefono"><br>
+    
+            <label for="observaciones">Observaciones:</label><br>
+            <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br>
+    
+            <input type="submit" value="Enviar">
+            
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById("openFormLink").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("contactForm").style.display = "block";
+        });
+
+    </script>
       <article>
         <h3>Únete a Nuestra Comunidad</h3>
         <p>
