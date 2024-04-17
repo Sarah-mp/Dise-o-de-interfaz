@@ -38,6 +38,7 @@
     margin: 0 10px; /* Ajusta el margen para dar espacio entre elementos */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: añade sombra para mejor estética */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
 }
 
 .carrusel-elementos img {
@@ -52,6 +53,8 @@
 .carrusel-elementos a {
     background: none;
     padding: 0;
+    position: relative;
+
 }
 
 /* Añade una sombra sutil y una transformación cuando se pasa el mouse sobre los íconos */
@@ -61,9 +64,7 @@
 }
 
 /* Añade un título emergente nativo del navegador en los enlaces para los nombres de los íconos */
-.carrusel-elementos a {
-    position: relative;
-}
+
 
 .carrusel-elementos a::after {
     content: attr(title);

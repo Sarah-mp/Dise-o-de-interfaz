@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
                 var img = slide.querySelector('img');
                 if (img) {
                     img.style.width = 'auto'; // Anula cualquier estilo 'width' inline
-                    img.style.height = 'auto'; // Anula cualquier estilo 'height' inline
+                    img.style.height = '100%'; // Anula cualquier estilo 'height' inline
                     
                 }
                 // Aplicar el ancho deseado a los contenedores de las diapositivas
