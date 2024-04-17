@@ -55,3 +55,53 @@ h1{
       background-color: var(--color-menu-hover);
   }
   
+  .card {
+    transition: transform 0.2s; /* Efecto de transición para el hover */
+  }
+  
+  .card:hover {
+    transform: scale(1.03); /* Escala la tarjeta un poco cuando se hace hover */
+  }
+  
+  .card-img-top {
+    max-height: 180px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin perder su aspecto */
+  }
+
+  /* Asumiendo que tienes una clase base para los contenedores de formulario */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre elementos */
+  margin: 20px 0;
+}
+
+.form-control, .dropdown, .btn, .progress {
+  margin-bottom: 10px; /* Espacio debajo de cada elemento */
+}
+
+/* Para el botón y la barra de progreso, se podrían añadir clases adicionales para personalizar */
+.btn-custom {
+  width: 100%; /* O el ancho deseado */
+  padding: 10px; /* Ajuste el padding según sea necesario */
+  /* Otros estilos */
+}
+
+.progress-custom {
+  height: 20px; /* Altura personalizada para la barra de progreso */
+  /* Otros estilos */
+}
+
+/* Estilos para el menú desplegable para que coincida con tus botones y campos de formulario */
+.dropdown-toggle {
+  width: 100%; /* O el ancho deseado */
+  padding: 10px;
+  /* Aquí podrías añadir bordes redondeados o sombras si es parte de tu estilo */
+}
+
+/* Si quieres mover la sección entera a otro lugar, podrías utilizar flexbox o grid en el contenedor padre */
+.main-section {
+  display: flex;
+  justify-content: space-between; /* Para poner los elementos a los extremos */
+  align-items: center; /* Para centrarlos verticalmente */
+}

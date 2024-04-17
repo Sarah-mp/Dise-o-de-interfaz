@@ -34,14 +34,18 @@
   
   .carrusel-elementos {
     flex: 0 0 auto;
-    margin: 0 30px; /* Ajusta el margen entre los elementos del carrusel */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza las transiciones */
+    width: 150px; /* O el ancho que desees para cada elemento del carrusel */
+    margin: 0 10px; /* Ajusta el margen para dar espacio entre elementos */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: añade sombra para mejor estética */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carrusel-elementos img {
-    width: 100%; /* Ajusta la imagen al contenedor del carrusel */
-    height: auto; /* Mantiene la relación de aspecto */
-    border-radius: 10px; /* Bordes redondeados */
+    width: auto; /* Ajusta la imagen al tamaño original */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 200px; /* Ajusta la altura máxima de la imagen */
+    height: auto; 
+  
 }
 
 /* Elimina el recuadro de fondo alrededor del ícono */
@@ -146,7 +150,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      margin: 0 3px;
+      margin: 0 5px;
       background-color: #ccc;
       transition: background-color 0.3s;
   }
@@ -159,4 +163,10 @@
       background: var(--color-btn-hover);
       opacity: 80%;
   }
+
+
+  
+
+
+
   
