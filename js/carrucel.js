@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
     const currentUrl = (window.location.href.split('/')[window.location.href.split('/').length-1]).split('.')[0];
-    if (currentUrl == "eventos") {
+    if (currentUrl == "index") {
         var glider = new Glider(document.querySelector('.lista-1'), {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -30,5 +30,22 @@ window.addEventListener('load', function () {
         document.querySelector('.lista-1').addEventListener('mouseout', () => {
             autoGlide = startAutoGlide();
         });
+
+        setTimeout(function() {
+            var slides = document.querySelectorAll('.glider-slide');
+            slides.forEach(function(slide) {
+                var img = slide.querySelector('img');
+                if (img) {
+                    img.style.width = 'auto'; // Anula cualquier estilo 'width' inline
+                    img.style.height = 'auto'; // Anula cualquier estilo 'height' inline
+                    
+                }
+                // Aplicar el ancho deseado a los contenedores de las diapositivas
+                slide.style.width = '200px'; // Puede que tengas que ajustar este valor
+                
+            });
+        }, 100); // El tiempo de retraso puede necesitar ajustes
     }
+
+    
 });
