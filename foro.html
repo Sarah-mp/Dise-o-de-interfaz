@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Foro</title>
+    <link rel="stylesheet" href="css/styleforo.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Foro</h1>
+    </header>
+    <main>
+        <section id="nuevo-post">
+            <h2>Nuevo Post</h2>
+            <form>
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Introduce el título" required>
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <input type="text" id="autor" name="autor" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecciona una categoría</option>
+                        <option value="general">General</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="deportes">Deportes</option>
+                        <!-- Agrega más opciones según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contenido">Contenido:</label>
+                    <textarea id="contenido" name="contenido" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+        <section id="posts">
+            <h2>Posts</h2>
+            <!-- Aquí se mostrarán los posts -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Foro</p>
+    </footer>
+</body>
+</html>

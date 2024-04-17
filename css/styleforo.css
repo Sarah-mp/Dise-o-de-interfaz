@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3498db; /* Cambiamos el color de fondo a azul */
+    color: #fff; /* Cambiamos el color del texto a blanco */
+    font-size: 16px; /* Aumentamos el tamaño del texto */
+}
+
+header, footer {
+    background-color: #2980b9; /* Cambiamos el color del encabezado y pie de página */
+    color: #fff;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-size: 24px; /* Aumentamos el tamaño de los encabezados */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 15px; /* Aumentamos el tamaño del padding para los campos de entrada */
+    margin-bottom: 15px; /* Aumentamos el espacio entre los campos */
+    font-size: 16px; /* Aumentamos el tamaño del texto */
+}
+
+button {
+    padding: 15px 30px; /* Aumentamos el tamaño del botón */
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Aumentamos el tamaño del texto */
+}
+
+button:hover {
+    background-color: #1f6fb2; /* Cambiamos el color al pasar el cursor sobre el botón */
+}
+
+#posts article {
+    background-color: #fff; /* Cambiamos el color de fondo de los posts a blanco */
+    color: #333; /* Cambiamos el color del texto en los posts */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#posts article h3 {
+    margin-top: 0;
+}
+
+#posts article p {
+    margin-bottom: 0;
+}
