@@ -24,6 +24,26 @@
     updateProgressBar(10); // Aumenta la barra de progreso en un 10%
   });
 
-  // Puedes agregar más eventos aquí para otros componentes...
+  document.querySelector('.form-control').addEventListener('input', function(event) {
 
+    var inputValue = event.target.value;
+    if (inputValue.length > 0 && inputValue.length === 1) {
+      updateProgressBar(10); // Aumenta la barra de progreso en un 10%      
+    }
+    if (inputValue.length === 0) {
+      updateProgressBar(-10); // Disminuye la barra de progreso en un 10%
+      
+    }
+  });
 
+  document.querySelector('a.btn-outline-primary').addEventListener('click', function() {
+    updateProgressBar(10); // Aumenta la barra de progreso en un 10%
+  });
+
+  document.querySelector('a.btn-outline-primary2').addEventListener('click', function() {
+    updateProgressBar(10); // Aumenta la barra de progreso en un 10%
+  });
+
+  document.querySelector('a.dropdown-item').addEventListener('click', function() {
+    updateProgressBar(10); // Aumenta la barra de progreso en un 10%
+  });

@@ -2,12 +2,12 @@ window.addEventListener('load', function () {
     const currentUrl = (window.location.href.split('/')[window.location.href.split('/').length-1]).split('.')[0];
     if (currentUrl == "index") {
         var glider = new Glider(document.querySelector('.lista-1'), {
-            slidesToShow: 3,
+            slidesToShow: 8,
             slidesToScroll: 1,
             draggable: true,
             dots: '.indicadores-1',
             arrows: {
-                prev: 'btn-carrusel-ant-1',
+                prev: '.btn-carrusel-ant-1',
                 next: '.btn-carrusel-sig-1'
             },
             scrollLock: true
