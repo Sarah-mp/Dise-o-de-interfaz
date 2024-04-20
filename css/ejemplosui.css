@@ -1,35 +1,81 @@
 :root {
   --color-primario: #273fd9;
-  /* Azul para elementos primarios */
   --color-secundario: #000000;
-  /* Verde actualizado como color secundario */
   --color-fondo: #FFFFFF;
-  /* Color de fondo para el contenido principal */
   --color-texto-primario: #212121;
-  /* Color principal del texto */
   --color-texto-secundario: #757575;
-  /* Color secundario del texto */
   --color-borde: #333333;
-  /* Color para bordes y divisiones */
   --color-menu-fondo: #333333;
-  /* Fondo oscuro para el menú */
   --color-menu-hover: #5267eb;
-  /* Color de fondo para hover en el menú */
   --color-texto-menu: #FFFFFF;
-  /* Color del texto del menú */
   --sombra: 0 4px 6px rgba(0, 0, 0, 0.6);
   --gradiente-hero: linear-gradient(to right, #0e2be3, #28be3f);
-  /* Gradiente desde azul a verde */
   --color-fondo-beneficios: #f9f9f9;
-  /* Fondo más suave para la sección de beneficios */
   --padding-seccion: 50px;
-  /* Espaciado uniforme para todas las secciones */
 }
 
 body {
   background: var(--gradiente-hero);
 }
 
+h1 {
+  color: #FFFFFF;
+
+}
+
+p {
+  color: #FFFFFF;
+
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Estilos generales del menú */
+.menu {
+  display: flex;
+  justify-content: center;
+  /* Centra los elementos de la lista horizontalmente */
+  background-color: var(--color-menu-fondo);
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  /* Mantiene la ampliación de la barra de fondo */
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-texto-menu);
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: var(--color-menu-hover);
+}
+
+.card {
+  transition: transform 0.2s;
+  /* Efecto de transición para el hover */
+}
+
+.card:hover {
+  transform: scale(1.03);
+  /* Escala la tarjeta un poco cuando se hace hover */
+}
+
+.card-img-top {
+  max-height: 180px;
+  object-fit: cover;
+  /* Asegura que la imagen cubra el área sin perder su aspecto */
+}
 
 h2 {
   color: #FFFFFF;
@@ -39,7 +85,7 @@ h1 {
   color: #FFFFFF;
 }
 
-p{
+p {
   color: #FFFFFF;
 }
 
