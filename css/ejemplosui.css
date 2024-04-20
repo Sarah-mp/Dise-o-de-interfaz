@@ -1,107 +1,443 @@
 :root {
-    --color-primario: #273fd9; /* Azul para elementos primarios */
-    --color-secundario: #000000; /* Verde actualizado como color secundario */
-    --color-fondo: #FFFFFF; /* Color de fondo para el contenido principal */
-    --color-texto-primario: #212121; /* Color principal del texto */
-    --color-texto-secundario: #757575; /* Color secundario del texto */
-    --color-borde: #333333; /* Color para bordes y divisiones */
-    --color-menu-fondo: #333333; /* Fondo oscuro para el menú */
-    --color-menu-hover: #5267eb; /* Color de fondo para hover en el menú */
-    --color-texto-menu: #FFFFFF; /* Color del texto del menú */
-    --sombra: 0 4px 6px rgba(0, 0, 0, 0.6);
-    --gradiente-hero: linear-gradient(to right, #0e2be3, #28be3f); /* Gradiente desde azul a verde */
-  --color-fondo-beneficios: #f9f9f9; /* Fondo más suave para la sección de beneficios */
-  --padding-seccion: 50px; /* Espaciado uniforme para todas las secciones */
-  }
-body{
-    background: var(--gradiente-hero); /* Usando gradiente */
+  --color-primario: #273fd9;
+  /* Azul para elementos primarios */
+  --color-secundario: #000000;
+  /* Verde actualizado como color secundario */
+  --color-fondo: #FFFFFF;
+  /* Color de fondo para el contenido principal */
+  --color-texto-primario: #212121;
+  /* Color principal del texto */
+  --color-texto-secundario: #757575;
+  /* Color secundario del texto */
+  --color-borde: #333333;
+  /* Color para bordes y divisiones */
+  --color-menu-fondo: #333333;
+  /* Fondo oscuro para el menú */
+  --color-menu-hover: #5267eb;
+  /* Color de fondo para hover en el menú */
+  --color-texto-menu: #FFFFFF;
+  /* Color del texto del menú */
+  --sombra: 0 4px 6px rgba(0, 0, 0, 0.6);
+  --gradiente-hero: linear-gradient(to right, #0e2be3, #28be3f);
+  /* Gradiente desde azul a verde */
+  --color-fondo-beneficios: #f9f9f9;
+  /* Fondo más suave para la sección de beneficios */
+  --padding-seccion: 50px;
+  /* Espaciado uniforme para todas las secciones */
 }
 
-h2{
-    color: #FFFFFF;
+body {
+  background: var(--gradiente-hero);
 }
 
-h1{
-    color: #FFFFFF;
-}
-  /* Reset básico para los estilos de la lista */
-  ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-  }
-  
-  /* Estilos generales del menú */
-  .menu {
-      display: flex;
-      justify-content: center; /* Centra los elementos de la lista horizontalmente */
-      background-color: var(--color-menu-fondo);
-      font-family: Arial, sans-serif;
-      padding: 10px 20px; /* Mantiene la ampliación de la barra de fondo */
-  }
-  
-  .menu li {
-      margin: 0 10px;
-  }
-  
-  .menu a {
-      text-decoration: none;
-      color: var(--color-texto-menu);
-      padding: 10px 15px;
-      display: block;
-  }
-  
-  .menu a:hover {
-      background-color: var(--color-menu-hover);
-  }
-  
-  .card {
-    transition: transform 0.2s; /* Efecto de transición para el hover */
-  }
-  
-  .card:hover {
-    transform: scale(1.03); /* Escala la tarjeta un poco cuando se hace hover */
-  }
-  
-  .card-img-top {
-    max-height: 180px;
-    object-fit: cover; /* Asegura que la imagen cubra el área sin perder su aspecto */
-  }
 
-  /* Asumiendo que tienes una clase base para los contenedores de formulario */
-.form-container {
+h2 {
+  color: #FFFFFF;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+p{
+  color: #FFFFFF;
+}
+
+/* Reset básico para los estilos de la lista */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Estilos generales del menú */
+.menu {
+  display: none;
+  justify-content: center;
+  background-color: var(--color-menu-fondo);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px 20px;
+}
+
+
+.menu.active {
   display: flex;
-  flex-direction: column;
-  gap: 10px; /* Espacio entre elementos */
-  margin: 20px 0;
 }
 
-.form-control, .dropdown, .btn, .progress {
-  margin-bottom: 10px; /* Espacio debajo de cada elemento */
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-menu-fondo);
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
 }
 
-/* Para el botón y la barra de progreso, se podrían añadir clases adicionales para personalizar */
-.btn-custom {
-  width: 100%; /* O el ancho deseado */
-  padding: 10px; /* Ajuste el padding según sea necesario */
-  /* Otros estilos */
+/* Icono de menú hamburguesa */
+.menu-btn:before {
+  content: "\2630";
+  font-size: 1.5rem;
 }
 
-.progress-custom {
-  height: 20px; /* Altura personalizada para la barra de progreso */
-  /* Otros estilos */
-}
-
-/* Estilos para el menú desplegable para que coincida con tus botones y campos de formulario */
-.dropdown-toggle {
-  width: 100%; /* O el ancho deseado */
+/* Asegura que los elementos del menú ocupen el ancho completo y tengan un aspecto de botones grandes y fácilmente clicables */
+.menu a {
   padding: 10px;
-  /* Aquí podrías añadir bordes redondeados o sombras si es parte de tu estilo */
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
-/* Si quieres mover la sección entera a otro lugar, podrías utilizar flexbox o grid en el contenedor padre */
-.main-section {
-  display: flex;
-  justify-content: space-between; /* Para poner los elementos a los extremos */
-  align-items: center; /* Para centrarlos verticalmente */
+.menu a:hover {
+  background-color: var(--color-menu-hover);
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+.dropdown {
+  margin-top: 20px;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 425px) {
+  .mb-5 {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p.lead {
+      font-size: 1rem;
+
+    }
+
+  }
+
+
+  .menu-btn {
+    display: none;
+
+  }
+
+  .menu-btn {
+    display: block;
+    background: var(--color-menu-fondo);
+    color: var(--color-texto-menu);
+    padding: 10px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: #FFFFFF;
+
+  }
+
+  .menu a:hover {
+    background-color: var(--color-menu-hover);
+  }
+
+  .menu-btn:hover {
+    background-color: var(--color-menu-hover);
+  }
+
+  .card {
+    margin: 10px 0;
+    /* Agrega un margen superior e inferior, pero elimina los márgenes laterales */
+  }
+
+  .card-img-top {
+    height: auto;
+    /* Hace que la altura de la imagen sea automática para mantener la proporción */
+  }
+
+  .form-group,
+  .alert,
+  .progress,
+  .dropdown,
+  .btn-group {
+    margin-top: 10px;
+    /* Reduce el margen superior para ahorrar espacio */
+  }
+
+  .btn,
+  .form-control {
+    font-size: 0.9rem;
+    /* Reduce el tamaño de la fuente para los botones y campos de formulario */
+  }
+
+  .progress-bar {
+    height: 1rem;
+    /* Aumenta la altura de la barra de progreso para hacerla más táctil */
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Espacio entre botones */
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Espacio después de la entrada de texto */
+  }
+
+  /* Estilo para el botón del popover para que no se expanda más allá de la pantalla */
+  .btn[data-toggle="popover"] {
+    white-space: nowrap;
+    /* Asegúrate de que el texto del botón no ocupe más de una línea */
+    overflow: hidden;
+    /* Oculta cualquier contenido que exceda el ancho del botón */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos si el texto es demasiado largo */
+  }
+
+  .btn,
+  .form-control,
+  .dropdown-toggle {
+    padding: 12px;
+    /* Aumenta el relleno para hacer los botones más grandes y fáciles de tocar */
+    font-size: 0.9rem;
+    /* Ajusta el tamaño de la fuente si es necesario */
+  }
+
+  .spinner-border {
+    width: 30px;
+    /* Reducir el ancho del spinner */
+    height: 30px;
+    /* Reducir la altura del spinner */
+    margin-top: 10px;
+    /* Añadir margen superior */
+  }
+}
+
+
+
+@media (max-width: 426px) {
+  mb-5 {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p.lead {
+      font-size: 1rem;
+
+    }
+
+  }
+
+  menu {
+    display: flex;
+    /* El menú siempre está visible y horizontal */
+    flex-direction: row;
+    /* Dirección horizontal */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: none;
+
+  }
+
+  .menu-btn {
+    display: block;
+    background: var(--color-menu-fondo);
+    color: var(--color-texto-menu);
+    padding: 10px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: #FFFFFF;
+
+  }
+
+  .menu a:hover {
+    background-color: var(--color-menu-hover);
+  }
+
+  .menu-btn:hover {
+    background-color: var(--color-menu-hover);
+  }
+
+  .card {
+    margin: 10px 0;
+    /* Agrega un margen superior e inferior, pero elimina los márgenes laterales */
+  }
+
+  .card-img-top {
+    height: auto;
+    /* Hace que la altura de la imagen sea automática para mantener la proporción */
+  }
+
+  .form-group,
+  .alert,
+  .progress,
+  .dropdown,
+  .btn-group {
+    margin-top: 10px;
+    /* Reduce el margen superior para ahorrar espacio */
+  }
+
+  .btn,
+  .form-control {
+    font-size: 0.9rem;
+    /* Reduce el tamaño de la fuente para los botones y campos de formulario */
+  }
+
+  .progress-bar {
+    height: 1rem;
+    /* Aumenta la altura de la barra de progreso para hacerla más táctil */
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Espacio entre botones */
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Espacio después de la entrada de texto */
+  }
+
+  /* Estilo para el botón del popover para que no se expanda más allá de la pantalla */
+  .btn[data-toggle="popover"] {
+    white-space: nowrap;
+    /* Asegúrate de que el texto del botón no ocupe más de una línea */
+    overflow: hidden;
+    /* Oculta cualquier contenido que exceda el ancho del botón */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos si el texto es demasiado largo */
+  }
+
+  .btn,
+  .form-control,
+  .dropdown-toggle {
+    padding: 12px;
+    /* Aumenta el relleno para hacer los botones más grandes y fáciles de tocar */
+    font-size: 0.9rem;
+    /* Ajusta el tamaño de la fuente si es necesario */
+  }
+
+  .spinner-border {
+    width: 30px;
+    /* Reducir el ancho del spinner */
+    height: 30px;
+    /* Reducir la altura del spinner */
+    margin-top: 10px;
+    /* Añadir margen superior */
+  }
+}
+
+
+
+/* Estilos para pantallas de 768px en adelante */
+@media (min-width: 760px) {
+  .menu {
+    display: flex;
+    /* Muestra el menú horizontal */
+    justify-content: center;
+    /* Centra el menú horizontalmente */
+    align-items: center;
+    /* Alinea los ítems verticalmente */
+    width: 100%;
+    /* Resto de tus estilos para el menú horizontal */
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: var(--color-texto-menu);
+    padding: 10px 15px;
+    /* Resto de tus estilos para los enlaces dentro del menú */
+  }
+
+  .menu li {
+    margin: 0 10px;
+    /* Resto de tus estilos para los ítems de lista dentro del menú */
+  }
+
+  .menu-btn {
+    display: none;
+    /* Asegura que el botón de menú tipo hamburguesa sigue escondido */
+  }
+
 }

@@ -38,24 +38,46 @@ ul {
     list-style: none;
 }
 
-/* Estilos generales del menú */
+
 .menu {
-    display: flex;
-    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    display: none;
+    justify-content: center;
     background-color: var(--color-menu-fondo);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px 20px; /* Mantiene la ampliación de la barra de fondo */
+    padding: 10px 20px;
 }
 
-.menu li {
-    margin: 0 10px;
+
+.menu.active {
+    display: flex;
+
 }
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-menu-fondo);
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+
+.menu-btn:before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
 
 .menu a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
-    color: var(--color-texto-menu);
-    padding: 10px 15px;
-    display: block;
 }
 
 .menu a:hover {
@@ -167,3 +189,161 @@ ul {
     height: auto;
 }
 
+.accordion-content {
+    display: block;
+}
+
+
+@media (max-width: 426px) {
+    .mb-5 {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+
+        }
+
+        p {
+            font-size: 1rem;
+
+        }
+
+    }
+
+    .menu-btn {
+        display: none;
+
+    }
+
+    .menu-btn {
+        display: block;
+        background: var(--color-menu-fondo);
+        color: var(--color-texto-menu);
+        padding: 10px;
+        text-align: center;
+        border: none;
+        width: 100%;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        color: #FFFFFF;
+
+    }
+
+    .menu a:hover {
+        background-color: var(--color-menu-hover);
+    }
+
+    .menu-btn:hover {
+        background-color: var(--color-menu-hover);
+    }
+
+    .tab-container {
+        display: none;
+    }
+
+    
+
+   
+}
+
+
+
+@media (min-width: 760px) {
+    .accordion{
+        display: none;
+    }
+
+    .tab-container {
+        width: 90%;
+        overflow: auto;
+    }
+
+    .menu {
+        display: flex;
+        /* Muestra el menú horizontal */
+        justify-content: center;
+        /* Centra el menú horizontalmente */
+        align-items: center;
+        /* Alinea los ítems verticalmente */
+        width: 100%;
+        /* Resto de tus estilos para el menú horizontal */
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: var(--color-texto-menu);
+        padding: 10px 15px;
+        /* Resto de tus estilos para los enlaces dentro del menú */
+    }
+
+    .menu li {
+        margin: 0 10px;
+        /* Resto de tus estilos para los ítems de lista dentro del menú */
+    }
+
+    .menu-btn {
+        display: none;
+        /* Asegura que el botón de menú tipo hamburguesa sigue escondido */
+    }
+
+}
+
+@media (max-width: 426px) {
+    .accordion-content {
+      display: none; /* Oculta el contenido por defecto */
+      padding: 15px;
+    
+    }
+  
+    .accordion-toggle {
+      width: 100%;
+      text-align: left;
+     color: var(--color-texto-menu);
+      border: none;
+      outline: none;
+      padding: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: var(--gradiente-hero);
+      border: solid 0.5px rgba(4, 51, 78, .6);
+
+    }
+  
+    .accordion-toggle:after {
+      content: '\002B';
+      float: right;
+    }
+  
+    .accordion-toggle.active:after {
+      content: "\2212"; /* Unicode character for "minus" sign */
+    }
+
+    .accordion{
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
+    }
+
+    .content p{
+        text-align: left;
+    }
+}

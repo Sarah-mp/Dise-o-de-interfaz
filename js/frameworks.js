@@ -119,3 +119,32 @@ option7.addEventListener('click', ()=>{
     chageOption()
 
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    var accToggles = document.querySelectorAll('.accordion-toggle');
+  
+    accToggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var accContent = this.nextElementSibling;
+  
+        // Cierra otros elementos del acordeón
+        var allContents = document.querySelectorAll('.accordion-content');
+        allContents.forEach(function(content) {
+          if (content !== accContent) {
+            content.style.display = 'none';
+            content.previousElementSibling.classList.remove('active');
+          }
+        });
+  
+        // Muestra u oculta este elemento del acordeón
+        if (accContent.style.display === 'block') {
+          accContent.style.display = 'none';
+          this.classList.remove('active');
+        } else {
+          accContent.style.display = 'block';
+          this.classList.add('active');
+        }
+      });
+    });
+  });
+  

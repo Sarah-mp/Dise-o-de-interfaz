@@ -9,10 +9,11 @@
 
 <body>
     <header>
+        <button class="menu-btn">Menú</button>
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="componetespage/componenteui.html">Componentes UI</a></li>
+                <li><a href="./componenteui.html">Componentes UI</a></li>
                 <li><a href="../ejemploUI.html">Ejemplos de componente UI</a></li>
                 <li><a href="../Frameworks.html">Frameworks UI</a></li>
                 <li><a href="../ejemploframeworks.html">Ejemplos de Frameworks UI </a></li>
@@ -26,10 +27,10 @@
     <div class="tab-container">
         <ul class="options">
             <li id="opcion1" class="option option-active">¿Que es?</li>
-            <li id="opcion2" class="option" > Caracteristicas </li>
-            <li id="opcion3" class="option" > Ventajas y Desventajas </li>
-            <li id="opcion4" class="option" > Aspectos utiles</li>
-            <li id="opcion5" class="option" > Aspectos utiles </li>
+            <li id="opcion2" class="option"> Caracteristicas </li>
+            <li id="opcion3" class="option"> Ventajas y Desventajas </li>
+            <li id="opcion4" class="option"> Aspectos utiles</li>
+            <li id="opcion5" class="option"> Aspectos utiles </li>
 
         </ul>
 
@@ -75,6 +76,7 @@
                     Comportamiento consistente: Utilizar componentes de UI en toda la aplicación ayuda a mantener un
                     comportamiento y estilo consistentes, lo que mejora la experiencia del usuario y facilita la
                     navegación.<br><br>
+                </p>
 
 
 
@@ -158,8 +160,163 @@
         </div>
     </div>
 
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-toggle">¿Qué es?</button>
+            <div class="accordion-content">
+                <div id="content1" class="content content-active">
+                    <h3>¿Que son los componetes UI?</h3>
+                    <p>
+                        Los componentes de UI, abreviatura de Componentes de Interfaz de Usuario,
+                        son elementos modulares y reutilizables que componen la interfaz de usuario de una aplicación o
+                        sitio web.
+                        Estos componentes representan partes específicas de la interfaz, como botones, formularios,
+                        barras
+                        de navegación, tarjetas, etc.
+                        La idea detrás de los componentes de UI es dividir la interfaz de usuario en partes más pequeñas
+                        y
+                        manejables, lo que facilita el desarrollo, la modificación y el mantenimiento de la aplicación.
+                    </p>
+                    <div class="contentimg">
+                        <a href="https://aprenderuxui.com/componentes-de-diseno-ui/aprender/uidesign/">
+                            <img src="../img/image 26.svg" alt="Componentes UI" class="imgcompo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <button class="accordion-toggle">Caracteristicas Importantes</button>
+            <div class="accordion-content">
+                <div id="content2" class="content content-active">
+                    <h3>Caracteristicas Importantes</h3>
+                    <p>
+                        Reutilizables:se diseñan para ser reutilizados en diferentes partes de la aplicación o incluso
+                        en
+                        diferentes aplicaciones. Esto reduce la duplicación de código y facilita la consistencia visual
+                        en
+                        toda la aplicación.<br><br>
+
+                        Modulares: cada componente es independiente y encapsula su propio comportamiento y estilo. Esto
+                        facilita la modificación y el reemplazo de componentes sin afectar otras partes de la interfaz
+                        de
+                        usuario.<br><br>
+
+                        Interactivos: suelen ser interactivos, lo que significa que pueden responder a la entrada del
+                        usuario, como hacer clic, deslizar o escribir. Esto permite crear interfaces de usuario
+                        dinámicas y
+                        fáciles de usar.<br><br>
+
+                        Personalizables:suelen ser altamente personalizables, lo que permite adaptar su apariencia y
+                        comportamiento a las necesidades específicas del proyecto.<br><br>
+
+                        Comportamiento consistente: Utilizar componentes de UI en toda la aplicación ayuda a mantener un
+                        comportamiento y estilo consistentes, lo que mejora la experiencia del usuario y facilita la
+                        navegación.<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-toggle">Ventajas & Desventajas</button>
+            <div class="accordion-content">
+                <div id="content3" class="content content-active">
+                    <h3 class="central-title">Ventajas & Desventajas</h3>
+                    <div class="advantages-content">
+                        <div class="text-content">
+                            <h4>Ventajas</h4>
+                            <p>
+                                - la experiencia del usuario.<br>
+                                - Aumenta la usabilidad de la aplicación.<br>
+                                - Fomenta la fidelización de usuarios.<br>
+                                - Reduce la tasa de abandono de la aplicación.<br>
+                                - Incrementa la aceptación del producto en el mercado.
+                            </p>
+                        </div>
+                        <div class="content-img">
+                            <img src="../img/image 27.svg" alt="Componente UI" class="img-component">
+                        </div>
+                    </div>
+
+                    <div class="disadvantages-content">
+                        <h4>Desventajas</h4>
+                        <p>
+                            - Requiere más tiempo y recursos.<br>
+                            - Puede haber debates sobre las preferencias de diseño.<br>
+                            - Existe el riesgo de sobrecargar la interfaz con características innecesarias.<br>
+                            - Los objetivos de diseño pueden entrar en conflicto con los objetivos comerciales.<br>
+                            - Es difícil medir el retorno de la inversión de manera tangible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-toggle">Compatibilidad & curva de aprendizaje</button>
+            <div class="accordion-content">
+                <div id="content4" class="content content-active">
+                    <div class="disadvantages-content">
+                        <h3>Componentes Utiles</h3>
+                        <p>
+                            Principios de diseño UI: Conocer los principios fundamentales del diseño de interfaz de
+                            usuario, como la consistencia, la retroalimentación, la jerarquía visual y la simplicidad,
+                            puede ayudar a crear interfaces efectivas y atractivas.<br><br>
+
+                            Tendencias de diseño: Estar al tanto de las tendencias actuales en diseño de interfaz de
+                            usuario puede inspirar nuevas ideas y enfoques creativos para mejorar la apariencia y la
+                            funcionalidad de una aplicación.<br><br>
+
+                            Herramientas de diseño UI/UX: Utilizar herramientas de diseño especializadas, como Adobe XD,
+                            Sketch o Figma, puede facilitar el proceso de diseño de la interfaz de usuario y permitir la
+                            creación de prototipos interactivos para pruebas de usabilidad.<br><br>
+
+                            Pruebas de usabilidad: Realizar pruebas de usabilidad con usuarios reales puede proporcionar
+                            información valiosa sobre cómo interactúan los usuarios con la interfaz y dónde se pueden
+                            realizar mejoras para optimizar la experiencia del usuario.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-toggle"> Componentes Utiles</button>
+            <div class="accordion-content">
+                <div id="content5" class="content content-active">
+                    <h3>Componentes Utiles</h3>
+                    <p>
+                        Accesibilidad: Considerar la accesibilidad desde el principio del proceso de diseño UI es
+                        fundamental para garantizar que la aplicación sea utilizada de manera efectiva por personas
+                        con discapacidades, cumpliendo con estándares de accesibilidad como las pautas de
+                        WCAG.<br><br>
+
+                        Iteración y mejora continua: La interfaz de usuario es un aspecto dinámico de cualquier
+                        aplicación, por lo que es importante estar abierto a la retroalimentación y realizar
+                        iteraciones continuas para mejorar y optimizar la experiencia del usuario con el
+                        tiempo.<br><br>
+
+                        Integración con UI frameworks: La utilización de frameworks de interfaz de usuario
+                        predefinidos, como Bootstrap, Materialize o Semantic UI, puede acelerar el desarrollo y
+                        garantizar una apariencia coherente en toda la aplicación.<br><br>
+
+                        Evolución tecnológica: Estar al tanto de las últimas tecnologías y tendencias, como la
+                        realidad aumentada, la inteligencia artificial y la interfaz conversacional, puede ayudar a
+                        anticipar y adaptarse a las futuras demandas y expectativas de los usuarios.<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <script src="../js/componente.js"> </script>
+    <script src="../js/menu.js"></script>
+
 </body>
 
 </html>
