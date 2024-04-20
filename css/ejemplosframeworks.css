@@ -15,7 +15,8 @@
 }
 
 body {
-    background: var(--gradiente-hero)
+    background: var(--gradiente-hero);
+    margin: 8px !important;
 }
 
 

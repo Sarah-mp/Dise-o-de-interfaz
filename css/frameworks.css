@@ -226,7 +226,8 @@ ul {
     }
 
     .menu-btn {
-        display: none;
+        display: block;
+        background: var(--color-menu-fondo);
     }
     
     
