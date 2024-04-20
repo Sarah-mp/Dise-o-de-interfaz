@@ -8,7 +8,7 @@
     --color-menu-fondo: #333333; /* Fondo oscuro para el menú */
     --color-menu-hover: #5267eb; /* Color de fondo para hover en el menú */
     --color-texto-menu: #FFFFFF; /* Color del texto del menú */
-    --sombra: 0 4px 6px rgba(0, 0, 0, 0.6);
+    --sombra: 0 4px 6px rgba(185, 0, 0, 0.6);
     --gradiente-hero: linear-gradient(to right, #0e2be3, #28be3f); /* Gradiente desde azul a verde */
   --color-fondo-beneficios: #f9f9f9; /* Fondo más suave para la sección de beneficios */
   --padding-seccion: 50px; /* Espaciado uniforme para todas las secciones */
@@ -23,7 +23,15 @@ h2{
 
 h1{
     color: #FFFFFF;
+    
 }
+
+p {
+    color: #FFFFFF;
+    
+
+}
+
   /* Reset básico para los estilos de la lista */
   ul {
       margin: 0;
